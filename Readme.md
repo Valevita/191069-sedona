@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Valeria Kasatkina](https://up.htmlacademy.ru/htmlcss/14/user/191069).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Игонин](https://up.htmlacademy.ru/htmlcss/14/user/30996).
 
 ---
 
