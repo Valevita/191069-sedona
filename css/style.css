@@ -1,0 +1,23 @@
+body {
+  font-family: "PTSans Regular", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "PTSans Bold", sans-serif;
+  font-size: 21px;
+  color: #000000;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.advantage b, .features b {
+  font-family: "PTSans Bold", sans-serif;
+  font-size: 21px;
+  color: #000000;
+  line-height: 21px;
+  font-weight: bold;
+}
