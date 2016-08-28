@@ -88,17 +88,22 @@ h2 {
   min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: -150px;
-  padding-top: 52px;
-  padding-bottom: 52px;
+  margin-top: -120px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   background-color: rgba(255, 255, 255, 0.9);
+  font-size: 0;
 }
 
 
 .visitsedona, .footer-social, .footer-copyright {
-  float: left;
+  display: inline-block;
   width: 33.3%;
+  font-size: 14px;
+  vertical-align: middle;
 }
+
+
 
 .footer-copyright {
   text-align: center;
@@ -377,25 +382,26 @@ h2 {
   font-weight: bold;
 }
 
-.dates input {
+.dates {
   width: 345px;
   padding-left: 15px;
-  margin-bottom: 28px;
-  margin-left: 17px;
+}
+
+.left-label {
+  display: inline-block;
+  width: 109px;
+}
+
+.middle-label {
+  display: inline-block;
+  width: 58px;
+  margin-left: 52px;
 }
 
 .people-number input {
   width: 114px;
   padding-left: 51px;
   margin-bottom: 54px;
-}
-
-.adults input::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 3px;
-  background-color: #a9a9a9;
 }
 
 .hotel-search input:hover {
@@ -427,21 +433,6 @@ h2 {
   background-color: #669ec0;
 }
 
-.adults, .children {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.adults input {
-  margin-left: 40px;
-  margin-right: 42px;
-}
-
-.children input {
-  margin-left: 27px;
-}
-
 .search {
   display: block;
   position: relative;
@@ -467,37 +458,21 @@ h2 {
   width: 568px;
 }
 
-.checkin {
+.checkin, .checkout {
   position: relative;
+  margin-bottom: 30px;
 }
 
-.checkin img {
+.checkin img, .checkout img {
   position: absolute;
   top: 9px;
   right: 9px;
   opacity: 0.24;
 }
 
-.checkin img:hover {
+.checkin img:hover, .checkout img:hover {
   opacity: 1;
 }
-
-.checkout {
-  position: relative;
-}
-
-.checkout img {
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  opacity: 0.24;
-}
-
-.checkout img:hover {
-  opacity: 1;
-}
-
-
 
 
 /* Стили для inner */

@@ -73,7 +73,7 @@
         <div class="advantage-description-2">
           <b>Красивая <br> дорога</b>
           <p>— №4 —</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p>Ехать в Седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!</p>
         </div>
         <div class="advantage-description-2">
           <b>Мало <br> туристов</b>
@@ -87,29 +87,23 @@
         <div class="form-block">
           <button class="search" type="button" value="search-hotel">Поиск гостиницы в Седоне</button>
           <form class="hotel-search" action="#" method="get">
-            <div class="dates">
-              <div class="checkin">
-                <label for="check-in">Дата заезда:</label>
-                <input type="text" name="check-in-date" id="check-in" placeholder="24 апреля 2016">
-                <img src="img/calender.png" alt="calendar" width="21" height="22">
-              </div>
-              <div class="checkout">
-                <label for="check-out">Дата выезда:</label>
-                <input type="text" name="check-out-date" id="check-out" placeholder="4 июля 2016">
-                <img src="img/calender.png" alt="calendar" width="21" height="22">
-              </div>
+            <div class="checkin">
+              <label class="left-label" for="check-in">Дата заезда:</label>
+              <input class="dates" type="text" name="check-in-date" id="check-in" placeholder="24 апреля 2016">
+              <img src="img/calender.png" alt="calendar" width="21" height="22">
+            </div>
+            <div class="checkout">
+              <label class="left-label" for="check-out">Дата выезда:</label>
+              <input class="dates" type="text" name="check-out-date" id="check-out" placeholder="4 июля 2016">
+              <img src="img/calender.png" alt="calendar" width="21" height="22">
             </div>
             <div class="people-number">
-              <div class="adults">
-                <label for="adults">Взрослые:</label>
-                <input type="text" name="adults" id="adults" placeholder="2">
-              </div>
-              <div class="children">
-                <label for="children">Дети:</label>
-                <input type="text" name="children" id="children" placeholder="0">
-              </div>
-              <button class="btn" type="submit" value="search">Найти</button>
+              <label class="left-label" for="adults">Взрослые:</label>
+              <input type="text" name="adults" id="adults" placeholder="2">
+              <label class="middle-label" for="children">Дети:</label>
+              <input type="text" name="children" id="children" placeholder="0">
             </div>
+            <button class="btn" type="submit" value="search">Найти</button>
           </form>
         </div>
         <div class="map">
