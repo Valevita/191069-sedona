@@ -376,7 +376,7 @@ h2 {
   background-color: #f2f2f2;
   border: none;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 14px;
   text-transform: uppercase;
   color: #000000;
   font-weight: bold;
@@ -389,18 +389,21 @@ h2 {
 
 .left-label {
   display: inline-block;
-  width: 109px;
+  width: 113px;
+  vertical-align: baseline;
+  font-size: 14px;
 }
 
 .middle-label {
   display: inline-block;
   width: 58px;
-  margin-left: 52px;
+  margin-left: 56px;
+  font-size: 14px;
 }
 
 .people-number input {
   width: 114px;
-  padding-left: 51px;
+  padding-left: 52px;
   margin-bottom: 54px;
 }
 
@@ -461,6 +464,7 @@ h2 {
 .checkin, .checkout {
   position: relative;
   margin-bottom: 30px;
+  font-size: 0px;
 }
 
 .checkin img, .checkout img {
@@ -561,3 +565,7 @@ h2 {
 
 
 
+
+.people-number {
+  font-size: 0;
+}
