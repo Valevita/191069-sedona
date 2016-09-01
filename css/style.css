@@ -886,9 +886,13 @@ a.sort-active {
   margin-bottom: 10px;
 }
 
-.price-filter {
+.price-filter-width {
   float: right;
-  width: 33%;
+  width: 24.73%;
+}
+
+.price-filter {
+  margin-left: -57px;
 }
 
 .price-controls {
@@ -907,12 +911,10 @@ a.sort-active {
   line-height: 34px;
   vertical-align: top;
   cursor: pointer;
-  margin-right: 4px;
-  padding-left: 13%;
 }
 
 .price-controls input {
-  width: 27%;
+  width: 21.87%;
   height: 32px;
   margin: 0;
   color: inherit;
@@ -920,6 +922,18 @@ a.sort-active {
   background: none;
   border: none;
   outline: none;
+}
+
+.price-controls .min-price {
+  width: 26.6%;
+  text-align: right;
+  margin-right: 4px;
+}
+
+.price-controls .max-price {
+  text-align: right;
+  width: 22.4%;
+  margin-right: 4px;
 }
 
 .price-controls::after {
