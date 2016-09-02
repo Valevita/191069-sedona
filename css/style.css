@@ -120,7 +120,7 @@ h2 {
   min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 36px;
+  padding-top: 32px;
   padding-bottom: 36px;
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 0;
@@ -487,8 +487,8 @@ h2 {
 .middle-label {
   display: inline-block;
   vertical-align: baseline;
-  width: 58px;
-  margin-left: 56px;
+  width: 62px;
+  margin-left: 55px;
   font-size: 14px;
 }
 
@@ -501,42 +501,6 @@ h2 {
   position: relative;
   display: inline-block;
   margin-bottom: 54px;
-}
-
-.quantity::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 3px;
-  background-color: #a9a9a9;
-  top: 18px;
-  left: 13px;
-}
-
-.quantity:hover::before {
-  background-color: #000000;
-}
-
-.quantity:active::before {
-  background-color: #81b3d2;
-}
-
-.quantity::after {
-  content: "";
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  background: transparent url("../img/plus.png");
-  top: 14px;
-  right: 14px;
-}
-
-.quantity:hover::after {
-  background: transparent url("../img/plus-hover.png");
-}
-
-.quantity:active::after {
-  background: transparent url("../img/plus-down.png");
 }
 
 .hotel-search input:hover {
@@ -604,20 +568,102 @@ h2 {
   font-size: 0px;
 }
 
-.checkin img, .checkout img {
+.calender {
+  display: inline-block;
   position: absolute;
   top: 9px;
   right: 9px;
+  width: 21px;
+  height: 22px;
+  background: transparent url("../img/calender.png") no-repeat;
   opacity: 0.24;
 }
 
-.checkin img:hover, .checkout img:hover {
+.hotel-search .calender:hover + input {
+  background-color: #ebebeb;
+}
+
+.hotel-search .calender:hover + input:focus {
+  background-color: #ffffff;
+}
+
+.hotel-search .calender:hover {
   opacity: 1;
+}
+
+.hotel-search .calender:active {
+  background: transparent url("../img/calender-down.png") no-repeat;
+}
+
+.hotel-search .calender:active + input {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
 .people-number {
   font-size: 0;
 }
+
+.minus {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+  top: 18px;
+  left: 13px;
+}
+
+.minus:hover {
+  background-color: #000000;
+}
+
+.minus:active {
+  background-color: #81b3d2;
+}
+
+.quantity .minus:hover ~ input {
+  background-color: #ebebeb;
+}
+
+.quantity .plus:hover ~ input {
+  background-color: #ebebeb;
+}
+
+.quantity .minus:hover ~ input:focus {
+  background-color: #ffffff;
+}
+
+.quantity .plus:hover ~ input:focus {
+  background-color: #ffffff;
+}
+
+.quantity .minus:active ~ input {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.quantity .plus:active ~ input {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.plus {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: transparent url("../img/plus.png");
+  right: 14px;
+  bottom: 14px;
+}
+
+.plus:hover {
+  background: transparent url("../img/plus-hover.png");
+}
+
+.plus:active {
+  background: transparent url("../img/plus-down.png");
+}
+
 
 
 /* Стили для inner */
@@ -762,6 +808,24 @@ h2 {
   width: 26px;
   height: 22px;
   background: transparent url("../img/checkbox-checked.png") no-repeat;
+  left: 0;
+}
+
+.housing-type input[type="checkbox"]:disabled + label:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  background: transparent url("../img/checkbox-disabled-nck.png") no-repeat;
+  left: 0;
+}
+
+.housing-type input[type="checkbox"]:checked:disabled + label:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  background: transparent url("../img/checkbox-disabled-ch.png") no-repeat;
   left: 0;
 }
 
@@ -1018,7 +1082,6 @@ a.sort-active {
   font-size: 14px;
   line-height: 34px;
   vertical-align: top;
-  cursor: pointer;
 }
 
 .price-controls input {
@@ -1118,6 +1181,9 @@ a.sort-active {
 .range-toggle-max {
   left: 70%;
 }
+
+
+
 
 
 
