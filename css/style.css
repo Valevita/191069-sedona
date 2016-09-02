@@ -14,6 +14,14 @@ body {
   background-color: #f2f2f2;
 }
 
+.main-container {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 5px #dbdbdb;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -88,6 +96,10 @@ h2 {
   color: #604e43;
 }
 
+.main-navigation .menu-active:active {
+  color: #d6d0cc;
+}
+
 .main-navigation li:nth-child(3) {
   text-align: right;
 }
@@ -138,12 +150,36 @@ h2 {
   background: #81b3d2 url("../img/twitter.png") no-repeat 50% 50%;
 }
 
+.twitter:hover {
+  background: #669ec0 url("../img/twitter.png") no-repeat 50% 50%;
+}
+
+.twitter:active {
+  background: #5496bd url("../img/twitter-down.png") no-repeat 50% 50%;
+}
+
 .facebook {
   background: #81b3d2 url("../img/f.png") no-repeat 50% 50%;
 }
 
+.facebook:hover {
+  background: #669ec0 url("../img/f.png") no-repeat 50% 50%;
+}
+
+.facebook:active {
+  background: #5496bd url("../img/f-down.png") no-repeat 50% 50%;
+}
+
 .youtube {
   background: #81b3d2 url("../img/youtube.png") no-repeat 50% 50%;
+}
+
+.youtube:hover {
+  background: #669ec0 url("../img/youtube.png") no-repeat 50% 50%;
+}
+
+.youtube:active {
+  background: #5496bd url("../img/youtube-down.png") no-repeat 50% 50%;
 }
 
 .footer-copyright span, .footer-copyright img {
@@ -153,6 +189,25 @@ h2 {
 
 .footer-copyright span {
   margin-right: 8px;
+}
+
+.html-academy-logo {
+  display: inline-block;
+  width: 113px;
+  height: 39px;
+}
+
+.html-academy-logo img:hover,
+.html-academy-logo img:active {
+  opacity: 0;
+}
+
+.html-academy-logo:hover {
+  background: url(../img/html-academy-logo-hover.png) no-repeat;
+}
+
+.html-academy-logo:active {
+  background: url(../img/html-academy-logo-down.png) no-repeat;
 }
 
 .social-btn {
@@ -165,9 +220,6 @@ h2 {
   margin-right: 6px;
 }
 
-.social-btn:hover {
-  background-color: #669ec0;
-}
 
 .visitsedona {
   color: #000000;
@@ -370,6 +422,10 @@ h2 {
   margin: 0 auto;
 }
 
+.map {
+  background-image: url("../img/map.jpg") no-repeat 100%;
+}
+
 /* Стили для модального окна */
 
 .hotel-search {
@@ -457,14 +513,30 @@ h2 {
   left: 13px;
 }
 
+.quantity:hover::before {
+  background-color: #000000;
+}
+
+.quantity:active::before {
+  background-color: #81b3d2;
+}
+
 .quantity::after {
   content: "";
   position: absolute;
   width: 11px;
   height: 11px;
-  background: #f2f2f2 url("../img/plus.png");
+  background: transparent url("../img/plus.png");
   top: 14px;
   right: 14px;
+}
+
+.quantity:hover::after {
+  background: transparent url("../img/plus-hover.png");
+}
+
+.quantity:active::after {
+  background: transparent url("../img/plus-down.png");
 }
 
 .hotel-search input:hover {
@@ -589,7 +661,25 @@ h2 {
   left: 0;
 }
 
+.infrastructure input[type="checkbox"] + label:hover:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  background: transparent url("../img/checkbox-nch-hover.png") no-repeat;
+  left: 0;
+}
+
 .infrastructure input[type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  background: transparent url("../img/checkbox-checked.png") no-repeat;
+  left: 0;
+}
+
+.infrastructure input[type="checkbox"]:checked + label:hover:before {
   content: "";
   position: absolute;
   width: 26px;
@@ -648,7 +738,25 @@ h2 {
   left: 0;
 }
 
+.housing-type input[type="checkbox"] + label:hover:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  background: transparent url("../img/checkbox-nch-hover.png") no-repeat;
+  left: 0;
+}
+
 .housing-type input[type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  background: transparent url("../img/checkbox-checked.png") no-repeat;
+  left: 0;
+}
+
+.housing-type input[type="checkbox"]:checked + label:hover:before {
   content: "";
   position: absolute;
   width: 26px;
@@ -845,28 +953,28 @@ a.sort-active {
   transform: scaleX(0.7);
 }
 
-.index-up:hover {
+.arrows a.index-up:hover {
   border: 8px solid #000000;
   border-top: 0;
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
- .index-up:active {
+ .arrows a.index-up:active {
   border: 8px solid #81b3d2;
   border-top: 0;
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
- .index-down:hover {
+ .arrows a.index-down:hover {
   border: 8px solid #000000;
   border-bottom: 0;
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
- .index-down:active {
+ .arrows a.index-down:active {
   border: 8px solid #81b3d2;
   border-bottom: 0;
   border-left-color: transparent;
@@ -1016,17 +1124,3 @@ a.sort-active {
 
 
 
-
-
-
-.main-container {
-  min-width: 768px;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  box-shadow: 0 0 15px 5px #dbdbdb;
-}
-
-.map {
-  background-image: url("../img/map.jpg") no-repeat 100%;
-}
