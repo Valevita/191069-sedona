@@ -126,15 +126,12 @@ h2 {
   font-size: 0;
 }
 
-
 .visitsedona, .footer-social, .footer-copyright {
   display: inline-block;
+  vertical-align: middle;
   width: 33.3%;
   font-size: 14px;
-  vertical-align: middle;
 }
-
-
 
 .footer-copyright {
   text-align: center;
@@ -193,6 +190,7 @@ h2 {
 
 .html-academy-logo {
   display: inline-block;
+  vertical-align: middle;
   width: 113px;
   height: 39px;
 }
@@ -212,6 +210,7 @@ h2 {
 
 .social-btn {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   vertical-align: top;
   width: 46px;
@@ -423,7 +422,7 @@ h2 {
 }
 
 .map {
-  background-image: url("../img/map.jpg") no-repeat 100%;
+  background: url("../img/map.jpg") no-repeat 100%;
 }
 
 /* Стили для модального окна */
@@ -479,8 +478,8 @@ h2 {
 
 .left-label {
   display: inline-block;
-  width: 113px;
   vertical-align: baseline;
+  width: 113px;
   font-size: 14px;
 }
 
@@ -500,6 +499,7 @@ h2 {
 .quantity {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   margin-bottom: 54px;
 }
 
@@ -570,6 +570,7 @@ h2 {
 
 .calender {
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   top: 9px;
   right: 9px;
@@ -831,6 +832,7 @@ h2 {
 
 .search-result a {
   display: inline-block;
+  vertical-align: top;
 }
 
 .search-result .hotel-pic {
@@ -868,10 +870,8 @@ h2 {
 
 .search-result p {
   margin-top: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
-
-
 
 .rating {
   float: right;
@@ -988,8 +988,6 @@ a.sort-active {
 
 }
 
-
-
 .arrows a.index-up {
   display: inline-block;
   vertical-align: middle;
@@ -1079,9 +1077,9 @@ a.sort-active {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 34px;
-  vertical-align: top;
 }
 
 .price-controls input {
