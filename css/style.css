@@ -120,7 +120,7 @@ h2 {
   min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 32px;
+  padding-top: 34px;
   padding-bottom: 36px;
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 0;
@@ -144,39 +144,159 @@ h2 {
 }
 
 .twitter {
-  background: #81b3d2 url("../img/twitter.png") no-repeat 50% 50%;
+  background-color: #81b3d2;
+  position: relative;
+}
+
+.twitter::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -891px -15px;
 }
 
 .twitter:hover {
-  background: #669ec0 url("../img/twitter.png") no-repeat 50% 50%;
+  background-color: #669ec0;
+}
+
+.twitter:hover::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -891px -15px;
 }
 
 .twitter:active {
-  background: #5496bd url("../img/twitter-down.png") no-repeat 50% 50%;
+  background-color: #5496bd;
+}
+
+.twitter:active::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -938px -15px;
 }
 
 .facebook {
-  background: #81b3d2 url("../img/f.png") no-repeat 50% 50%;
+  background-color: #81b3d2;
+  position: relative;
+}
+
+.facebook::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 19px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -385px -15px;
 }
 
 .facebook:hover {
-  background: #669ec0 url("../img/f.png") no-repeat 50% 50%;
+  background-color: #669ec0;
+}
+
+.facebook:hover::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 19px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -385px -15px;
 }
 
 .facebook:active {
-  background: #5496bd url("../img/f-down.png") no-repeat 50% 50%;
+  background-color: #5496bd;
+}
+
+.facebook:active::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 19px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -425px -15px;
 }
 
 .youtube {
-  background: #81b3d2 url("../img/youtube.png") no-repeat 50% 50%;
+  background-color: #81b3d2;
+  position: relative;
+}
+
+.youtube::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -985px -15px;
 }
 
 .youtube:hover {
-  background: #669ec0 url("../img/youtube.png") no-repeat 50% 50%;
+ background-color: #669ec0;
+}
+
+.youtube:hover::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -985px -15px;
 }
 
 .youtube:active {
-  background: #5496bd url("../img/youtube-down.png") no-repeat 50% 50%;
+  background-color: #5496bd;
+}
+
+.youtube:active::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -1035px -15px;
 }
 
 .footer-copyright span, .footer-copyright img {
@@ -185,7 +305,7 @@ h2 {
 }
 
 .footer-copyright span {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .html-academy-logo {
@@ -195,17 +315,20 @@ h2 {
   height: 39px;
 }
 
-.html-academy-logo img:hover,
+.html-academy-logo img:hover {
+  opacity: 0;
+}
+
 .html-academy-logo img:active {
   opacity: 0;
 }
 
 .html-academy-logo:hover {
-  background: url(../img/html-academy-logo-hover.png) no-repeat;
+  background: url("../img/html-academy-logo-hover.png") no-repeat;
 }
 
 .html-academy-logo:active {
-  background: url(../img/html-academy-logo-down.png) no-repeat;
+  background: url("../img/html-academy-logo-down.png") no-repeat;
 }
 
 .social-btn {
@@ -219,7 +342,6 @@ h2 {
   margin-right: 6px;
 }
 
-
 .visitsedona {
   color: #000000;
   font-size: 21px;
@@ -228,7 +350,9 @@ h2 {
   text-decoration: none;
 }
 
+
 /* Стили для index */
+
 
 .introduction {
   position: relative;
@@ -248,13 +372,13 @@ h2 {
 
 .advantage-description-1 {
   float: left;
-  width: 33%;
+  width: 33.3%;
   box-sizing: border-box;
   background-color: #81b3d2;
   min-height: 256px;
   padding-left: 37px;
   padding-right: 40px;
-  padding-top: 49px;
+  padding-top: 37px;
   text-align: center;
 }
 
@@ -267,31 +391,39 @@ h2 {
   font-weight: bold;
   color: #fff;
   line-height: 21px;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
+  margin-top: 6%;
 }
 
 .advantage-description-1 p {
+  max-width: 305px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   color: #fff;
   line-height: 21px;
   margin-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantage {
   min-height: 256px;
-  background-color: #eeeeee;
+  background-color: #81b3d2;
+  font-size: 0;
 }
 
 .features {
-  margin-top: 59px;
-  margin-bottom: 4.83%;
+  margin-top: 58px;
+  margin-bottom: 4.9%;
+  font-size: 0;
 }
 
 .feature-item {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   width: 33.3%;
   box-sizing: border-box;
+  font-size: 14px;
   padding-top: 104px;
   padding-left: 45px;
   padding-right: 45px;
@@ -309,7 +441,10 @@ h2 {
 }
 
 .feature-item p {
+  max-width: 287px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .first {
@@ -325,7 +460,7 @@ h2 {
 }
 
 .image {
-  width: 67%;
+  width: 66.7%;
   height: 256px;
 }
 
@@ -347,19 +482,18 @@ h2 {
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
-  margin-top: 56px;
-  margin-bottom: 32px;
+  margin-top: 57px;
+  margin-bottom: 31px;
 }
 
 .white-bottom {
   position: absolute;
-  top: 476px;
+  bottom: 0;
   width: 100%;
-  height: 37px;
-  background: url("../img/white-bottom.png") no-repeat;
-  background-size: 100% 37px;
+  height: 12%;
+  background: url("../img/white-bottom.png") no-repeat center bottom;
+  background-size: contain;
 }
-
 
 .main-image {
   height: 512px;
@@ -375,26 +509,74 @@ h2 {
 }
 
 .housing {
-  background: #ffffff url("../img/icon-housing.png") no-repeat 50% 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.housing::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -569px -15px;
 }
 
 .food {
-  background: #ffffff url("../img/icon-food.png") no-repeat 50% 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.food::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 70px;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -465px -15px;
 }
 
 .souvenirs {
-  background: #ffffff url("../img/icon-souvenirs.png") no-repeat 50% 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.souvenirs::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 76px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -674px -15px;
+}
+
+.advantage-grey {
+  background-color: #eeeeee;
 }
 
 .advantage-description-2 {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   width: 33.3%;
   box-sizing: border-box;
+  font-size: 14px;
   background-color: #eeeeee;
   min-height: 256px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 46px;
+  padding-top: 48px;
   text-align: center;
 }
 
@@ -409,7 +591,10 @@ h2 {
 
 .advantage-description-2 p {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
+  max-width: 265px;
 }
 
 .central-message-2 {
@@ -425,7 +610,13 @@ h2 {
   background: url("../img/map.jpg") no-repeat 100%;
 }
 
+.enter-dates {
+  line-height: 24px;
+}
+
+
 /* Стили для модального окна */
+
 
 .hotel-search {
   display: none;
@@ -456,7 +647,7 @@ h2 {
 
 .form-and-map {
   overflow: hidden;
-  margin-top: 51px;
+  margin-top: 48px;
 }
 
 .hotel-search input {
@@ -473,7 +664,7 @@ h2 {
 
 .dates {
   width: 345px;
-  padding-left: 15px;
+  padding-left: 14px;
 }
 
 .left-label {
@@ -562,6 +753,16 @@ h2 {
   width: 568px;
 }
 
+::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
 .checkin, .checkout {
   position: relative;
   margin-bottom: 30px;
@@ -576,27 +777,31 @@ h2 {
   right: 9px;
   width: 21px;
   height: 22px;
-  background: transparent url("../img/calender.png") no-repeat;
   opacity: 0.24;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position:  -15px -15px;
 }
 
-.hotel-search .calender:hover + input {
+.calender:hover + input {
   background-color: #ebebeb;
 }
 
-.hotel-search .calender:hover + input:focus {
+.calender:hover + input:focus {
   background-color: #ffffff;
 }
 
-.hotel-search .calender:hover {
+.calender:hover {
   opacity: 1;
 }
 
-.hotel-search .calender:active {
-  background: transparent url("../img/calender-down.png") no-repeat;
+.calender:active {
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -66px -15px;
 }
 
-.hotel-search .calender:active + input {
+.calender:active + input {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -622,28 +827,28 @@ h2 {
   background-color: #81b3d2;
 }
 
-.quantity .minus:hover ~ input {
+.minus:hover ~ input {
   background-color: #ebebeb;
 }
 
-.quantity .plus:hover ~ input {
+.plus:hover ~ input {
   background-color: #ebebeb;
 }
 
-.quantity .minus:hover ~ input:focus {
+.minus:hover ~ input:focus {
   background-color: #ffffff;
 }
 
-.quantity .plus:hover ~ input:focus {
+.plus:hover ~ input:focus {
   background-color: #ffffff;
 }
 
-.quantity .minus:active ~ input {
+.minus:active ~ input {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
-.quantity .plus:active ~ input {
+.plus:active ~ input {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -652,17 +857,23 @@ h2 {
   position: absolute;
   width: 11px;
   height: 11px;
-  background: transparent url("../img/plus.png");
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -768px -15px;
   right: 14px;
   bottom: 14px;
 }
 
 .plus:hover {
-  background: transparent url("../img/plus-hover.png");
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -850px -15px;
 }
 
 .plus:active {
-  background: transparent url("../img/plus-down.png");
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -809px -15px;
 }
 
 
@@ -699,57 +910,63 @@ h2 {
   margin-left: 41px;
 }
 
-.infrastructure input[type="checkbox"] + label:before {
+input[type="checkbox"] + label:before {
   content: "";
   position: absolute;
-  width: 26px;
+  width: 22px;
   height: 22px;
-  background: transparent url("../img/checkbox-nonchecked.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -333px -15px;
   left: 0;
 }
 
-.infrastructure input[type="checkbox"] + label:hover:before {
+input[type="checkbox"] + label:hover:before {
   content: "";
   position: absolute;
-  width: 26px;
+  width: 22px;
   height: 22px;
-  background: transparent url("../img/checkbox-nch-hover.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -281px -15px;
   left: 0;
 }
 
-.infrastructure input[type="checkbox"]:checked + label:before {
+input[type="checkbox"]:checked + label:before {
   content: "";
   position: absolute;
   width: 26px;
   height: 22px;
-  background: transparent url("../img/checkbox-checked.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -117px -15px;
   left: 0;
 }
 
-.infrastructure input[type="checkbox"]:checked + label:hover:before {
+input[type="checkbox"]:checked + label:hover:before {
   content: "";
   position: absolute;
   width: 26px;
   height: 22px;
-  background: transparent url("../img/checkbox-checked.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -117px -15px;
   left: 0;
 }
 
-.infrastructure input[type="checkbox"]:disabled + label:before {
+input[type="checkbox"]:disabled + label:before {
   content: "";
   position: absolute;
   width: 26px;
   height: 22px;
-  background: transparent url("../img/checkbox-disabled-nck.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -229px -15px;
   left: 0;
 }
 
-.infrastructure input[type="checkbox"]:checked:disabled + label:before {
+input[type="checkbox"]:checked:disabled + label:before {
   content: "";
   position: absolute;
   width: 26px;
   height: 22px;
-  background: transparent url("../img/checkbox-disabled-ch.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -173px -15px;
   left: 0;
 }
 
@@ -774,60 +991,6 @@ h2 {
 
 .housing-type label {
   margin-left: 41px;
-}
-
-.housing-type input[type="checkbox"] + label:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 22px;
-  background: transparent url("../img/checkbox-nonchecked.png") no-repeat;
-  left: 0;
-}
-
-.housing-type input[type="checkbox"] + label:hover:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 22px;
-  background: transparent url("../img/checkbox-nch-hover.png") no-repeat;
-  left: 0;
-}
-
-.housing-type input[type="checkbox"]:checked + label:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 22px;
-  background: transparent url("../img/checkbox-checked.png") no-repeat;
-  left: 0;
-}
-
-.housing-type input[type="checkbox"]:checked + label:hover:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 22px;
-  background: transparent url("../img/checkbox-checked.png") no-repeat;
-  left: 0;
-}
-
-.housing-type input[type="checkbox"]:disabled + label:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 22px;
-  background: transparent url("../img/checkbox-disabled-nck.png") no-repeat;
-  left: 0;
-}
-
-.housing-type input[type="checkbox"]:checked:disabled + label:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 22px;
-  background: transparent url("../img/checkbox-disabled-ch.png") no-repeat;
-  left: 0;
 }
 
 .search-result a {
@@ -1010,7 +1173,7 @@ a.sort-active {
   border-bottom: 0;
   border-left-color: transparent;
   border-right-color: transparent;
-  margin-left: 3px;
+  margin-left: 5px;
   margin-right: 0;
   transform: scaleX(0.7);
 }
@@ -1179,12 +1342,5 @@ a.sort-active {
 .range-toggle-max {
   left: 70%;
 }
-
-
-
-
-
-
-
 
 
